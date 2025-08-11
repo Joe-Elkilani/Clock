@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, teal, green);
+}
+
+.clock {
+    background: lawngreen;
+    border: 5px solid #01b301;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.fir {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.fir::after {
+    content: "12";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.med1 {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.med1::after {
+    content: "9";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    transform: translateY(-50%);
+}
+
+.med2 {
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.med2::after {
+    content: "3";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    right: 25px;
+    transform: translateY(-50%);
+}
+
+.las {
+    position: absolute;
+    width: 5px;
+    height: 20px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.las::after {
+    content: "6";
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dasshed {
+    background: yellow;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: seagreen;
+    width: 15px;
+    border-radius: 50%;
+    height: 15px;
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+.hand {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translate(-50%) rotate(90deg);
+}
+
+.hour {
+    width: 6px;
+    height: 80px;
+    background: #fff;
+}
+
+.min {
+    width: 5px;
+    height: 110px;
+    background: #00f;
+}
+
+.sec {
+    width: 3px;
+    height: 100px;
+    background: red;
+}
